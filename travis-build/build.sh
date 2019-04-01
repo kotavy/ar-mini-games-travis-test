@@ -1,15 +1,6 @@
 #! /bin/sh
 
-PROJECT_PATH=$(pwd)/$UNITY_PROJECT_PATH
-UNITY_BUILD_DIR=$(pwd)/Build
-LOG_FILE=$UNITY_BUILD_DIR/unity-win.log
-
-
-ERROR_CODE=0
-echo "Items in project path ($PROJECT_PATH):"
-ls "$PROJECT_PATH"
-
-
+## Build the project
 echo "Building project for Windows..."
 mkdir $UNITY_BUILD_DIR
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
