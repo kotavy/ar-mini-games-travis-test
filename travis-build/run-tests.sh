@@ -22,6 +22,6 @@ echo "Running editor unit tests for ${PROJECT_PATH}"
 
 rc0=$?
 echo "Unit test logs"
-cat $(pwd)/test.xml
+cat $(pwd)/travis-buid/test.xml
 # exit if tests failed
 if [ $rc0 -ne 0 ]; then { echo "Failed unit tests"; exit $rc0; } fi
