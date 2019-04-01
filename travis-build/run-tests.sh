@@ -9,13 +9,13 @@ echo "Items in project path ($PROJECT_PATH):"
 ls "$PROJECT_PATH"
 
 ## Run the editor unit tests
-echo "Running editor unit tests for ${PROJECT_PATH}"
+echo "Running editor unit tests for ${PROJECT_PATH}/Assets/Scenes"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
-  -projectPath "$(pwd)/${PROJECT_PATH}" \
+  -projectPath "$(pwd)/${PROJECT_PATH}/Assets/Scenes" \
   -runEditorTests \
   -editorTestsResultFile $(pwd)/travis-build/test.xml \
   -quit
