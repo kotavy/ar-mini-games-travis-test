@@ -1,16 +1,12 @@
 language: objective-c
-osx_image: xcode9.2
-rvm:
-- 2.2         #see before_install for getting RVM stable.
+os: osx
 
 env:
 - TRAVIS_TAG="Deploy-2018.3.6f1" PROJECT_NAME="AR-Mini-Games" UNITY_PROJECT_PATH="UnityProject" DEPLOY_UNITYPACKAGE="path set in deploy script"
 
-
 cache:
   directories:
     - $UNITY_DOWNLOAD_CACHE
-
     
 before_install:
 - chmod a+x ./travis-build/*.sh
