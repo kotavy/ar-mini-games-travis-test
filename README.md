@@ -1,5 +1,5 @@
 # AR Mini Games
-[![Build Status](https://travis-ci.org/kotavy/ar-mini-games-travis-test.svg?branch=master)](https://travis-ci.org/kotavy/ar-mini-games-travis-test)
+[![Build Status](https://travis-ci.com/kotavy/ar-mini-games-travis-test.svg?branch=master)](https://travis-ci.com/kotavy/ar-mini-games-travis-test)
 [![Unity Version](https://img.shields.io/badge/unity%20version-2018.3.6f1-brightgreen.svg)]()
 
 _AR Mini Games_ (working title) is a project for mini games in Augmented Reality. Using the Unity engine in combination with ARCore and ARKit functionality we can bring these experiences to our users. Current games planned for production are AR Darts and AR Basketball.
