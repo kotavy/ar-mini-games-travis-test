@@ -17,7 +17,7 @@ echo "Running editor unit tests for ${PROJECT_PATH}"
   -logFile $(pwd)/unity.log \
   -projectPath "$(pwd)/${PROJECT_PATH}" \
   -runEditorTests \
-  -editorTestsResultFile $(pwd)/test.xml \
+  -editorTestsResultFile $(pwd)/travis-build/test.xml \
   -quit
 
 rc0=$?
