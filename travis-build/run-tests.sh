@@ -21,6 +21,7 @@ echo "Running editor unit tests for ${PROJECT_PATH}"
   -quit
 
 rc0=$?
+echo test.xml
 echo "Unit test logs"
 cat $(pwd)/travis-build/test.xml
 # exit if tests failed
