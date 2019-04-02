@@ -20,7 +20,7 @@ echo "Running editor unit tests for ${PROJECT_PATH}"
   -logFile \
   -quit
 
-echo "Unit test logs"
+echo "Unit test results:"
 UNITY_EXIT_CODE=$?
 
 if [ $UNITY_EXIT_CODE -eq 0 ]; then
@@ -32,9 +32,5 @@ elif [ $UNITY_EXIT_CODE -eq 3 ]; then
 else
   echo "Unexpected exit code $UNITY_EXIT_CODE";
 fi
-
-echo $(pwd)/test-results.xml
-cat $(pwd)/travis-build/test-results.xml
-cat $(pwd)/$TEST_PLATFORM-results.xml | grep test-run | grep Passed
 
 exit $UNITY_EXIT_CODE
